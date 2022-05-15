@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/edt_timkiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Tìm kiếm"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:paddingLeft="10dp" />
+    <ListView
+        android:id="@+id/lv_nguyenlieu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_them"
+        android:layout_below="@id/edt_timkiem" />
+
+    <Button
+        android:id="@+id/btn_them"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Thêm nguyên liệu" />
+</RelativeLayout>
